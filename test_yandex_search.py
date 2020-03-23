@@ -28,7 +28,7 @@ def test_yandex_search():
         link.click()
 
     driver.switch_to.window(driver.window_handles[1])
-    with allure.step('Проверяем тайтл')
+    with allure.step('Проверяем тайтл'):
         assert driver.title == 'Яндекс.Маркет — выбор и покупка товаров из проверенных интернет-магазинов'
 
 
